@@ -1,0 +1,3 @@
+# Illustrative offsets positively identified as in-game TV broadcasts
+# (comma-separated, pass to: gta6media classify --tv-offsets ...)
+16f0d2000,1811ef000,102d6f000,134451000,0f630d000,193674000

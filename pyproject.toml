@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gta6-media-toolkit"
+version = "0.1.0"
+description = "Inventory, classify, organize, convert and QC carved Bink2 media"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "PiggyWu981" }]
+dependencies = []
+
+[project.scripts]
+gta6media = "gta6media.cli:main"
+
+[tool.setuptools]
+packages = ["gta6media"]

@@ -1,0 +1,20 @@
+Apply to: gta6-video-reader / skill/scripts/bink2mp4.py
+Purpose:   honor the GTA6X_PRESET environment variable so the encoder preset
+           can be selected at runtime (gta6media convert --preset ...).
+Default:   "medium" when the variable is unset (unchanged stock behavior).
+
+--- a/skill/scripts/bink2mp4.py
++++ b/skill/scripts/bink2mp4.py
+@@ -126,8 +126,9 @@
+     if wav_path:
+         cmd_ff += ["-i", str(Path(wav_path).resolve())]
+-    cmd_ff += ["-c:v", "libx264", "-preset", "medium", "-crf", str(crf),
+-               "-pix_fmt", "yuv420p"]
++    _preset = os.environ.get("GTA6X_PRESET", "medium")
++    cmd_ff += ["-c:v", "libx264", "-preset", _preset, "-crf", str(crf),
++               "-pix_fmt", "yuv420p"]
+     if wav_path:
+         cmd_ff += ["-c:a", "aac", "-shortest"]
+
+Apply with:  patch -p1 < bink2mp4-preset.patch   (from the repo root of
+gta6-video-reader), or apply the two-line edit manually.

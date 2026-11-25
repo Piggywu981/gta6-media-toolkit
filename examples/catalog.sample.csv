@@ -1,0 +1,7 @@
+file,category,offset,duration_sec,width,height,bytes,is_tv
+movies_bink2_16f0d2000.bk2,TV show (station logo),6162380800,474.63,1920,1080,303155204,True
+movies_bink2_0a55aa000.bk2,Loading / UI loop 720p,2774179840,147.13,1280,720,89830536,False
+movies_bink2_0369fb000.bk2,Portrait phone video,914358272,33.23,720,1280,19970440,False
+movies_bink2_01650f000.bk2,Square HUD graphics,378142720,5.00,512,512,1249892,False
+movies_bink2_0116f9000.bk2,High-res cutscene 1440p,293601280,72.57,2560,1440,71977296,False
+movies_bink2_143205000.bk2,Cutscene 1080p,5421158400,533.83,1920,1080,373705448,False

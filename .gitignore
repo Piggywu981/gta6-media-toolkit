@@ -1,0 +1,16 @@
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.venv/
+venv/
+*.bk2
+*.mp4
+*.opus
+*.wav
+movies.json
+jobs.json
+results.json
+qc.json
+catalog.csv
